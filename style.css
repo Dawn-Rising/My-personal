@@ -1,17 +1,19 @@
 /* overall body style */
 html, body 
 {
-  height: 100%;
-  width: 100%;
   /* creates the gradient background */
-  background-image: linear-gradient(140deg, #6F1D40 45%, #BC70A4 75%);
+  background-image: linear-gradient(140deg, #6F1D40 45%, #CE4A7EFF 75%);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-width: 410px;
 }
 
 
 /* header styles */
 header
 {
-  background-color: purple;
+  background-color: #1C1C1BFF;
+  position: fixed;
 }
 .row
 {
@@ -20,28 +22,63 @@ header
 
 h1
 {
-
+  color: #CE4A7EFF;
   font-size: 300%;
   font-family: Fantasy,Copperplate;
 }
 
 /* nav style */
-.nav-tabs .nav-item .nav-link {
-  
-  color: #FFF;
-  background-color: purple;
+.nav-tabs .nav-item .nav-link {  
+  color: #E9DEDC;
+  background-color: #1C1C1BFF;
 }
 
 .nav-tabs .nav-item .nav-link.active {
-  color: #0080FF;
+  color: #E9DEDC;
   background-color: #6F1D40;
   border-color: #6F1D40;
 }
 
 /* general tag styles */
+.main
+{
+  padding-top:35%;
+}
 .center {
   display: block;
   margin-left: auto;
   width: 100%;
   height: 100%;
+}
+
+.container-fluid
+{
+  padding-bottom: 20px;
+  color:#E9DEDC;
+  text-align: justify;
+}
+
+.back-white
+{
+  background-color: #E9DEDC;
+  color:#1C1C1BFF;
+}
+
+/* footer styles */
+
+footer 
+{
+  color: #E9DEDC;
+  height:50px;
+  background-color: #1C1C1BFF ;
+}
+footer a:link {
+  color: #E9DEDC;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+footer a:visited {
+  color: pink;
+  background-color: transparent;
 }

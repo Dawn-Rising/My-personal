@@ -5,7 +5,7 @@ html, body
   background-image: linear-gradient(140deg, #6F1D40 45%, #CE4A7EFF 75%);
   background-repeat: no-repeat;
   background-attachment: fixed;
-  min-width: 410px;
+  min-width: 500px;
 }
 
 
@@ -14,16 +14,21 @@ header
 {
   background-color: #1C1C1BFF;
   position: fixed;
+  width:100%;
 }
 .row
 {
   height:50%;
 }
+.logo
+{
+  width:60px;
+}
 
 h1
 {
   color: #CE4A7EFF;
-  font-size: 300%;
+  font-size: 350%;
   font-family: Fantasy,Copperplate;
 }
 
@@ -63,6 +68,11 @@ h1
   background-color: #E9DEDC;
   color:#1C1C1BFF;
 }
+img
+{
+  width:100%;  
+}
+
 
 /* footer styles */
 

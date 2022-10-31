@@ -7,4 +7,14 @@ Things I want to do
 
 look into text to speach accessability things
 
-browser query
+
+contact us page
+gallery page
+
+
+
+how is it accessable
+
+-not true blacks or whites
+-has multiple nav options
+-implements the nave role

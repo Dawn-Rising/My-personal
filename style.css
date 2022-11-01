@@ -123,6 +123,12 @@ a:visited
 
 .sp4
 {
+  flex: 0 0 auto;
+  width: 8.33333333%;
+}
+
+.sp4
+{
   text-align: center;
   flex: 0 0 auto;
   width: 33%;

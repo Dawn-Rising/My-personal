@@ -6,6 +6,7 @@ html, body
   background-repeat: no-repeat;
   background-attachment: fixed;
   min-width: 700px;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 
@@ -21,11 +22,11 @@ header
   --bs-gutter-x: 1.5rem;
   --bs-gutter-y: 0;
   display: flex;
-  flex-wrap: wrap;
   margin-top: calc(-1 * var(--bs-gutter-y));
-  margin-right: calc(1 * var(--bs-gutter-x));
+  margin-right: 3rem;
   margin-left: calc(0.2 * var(--bs-gutter-x));
   height:50%;
+  padding-right: 5%;
 }
 h1
 {
@@ -124,6 +125,7 @@ a:link
   padding-bottom: 20px;
   color:#E9DEDC;
   text-align: left;
+  /* font-size: 15px; */
 }
 
 .sp1
@@ -149,7 +151,11 @@ a:link
   flex: 0 0 auto;
   width: 41.66666667%;
 }
-
+.sp5
+{  
+  flex: 0 0 auto;
+  width: 50%;
+}
 .sp7
 {
   
@@ -211,6 +217,7 @@ img
   width:90%;  
   padding: 5%;
 }
+
 
 
 /* footer styles */

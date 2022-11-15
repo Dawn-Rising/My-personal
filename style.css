@@ -5,7 +5,7 @@ html, body
   background-image: linear-gradient(140deg, #6F1D40 45%, #CE4A7EFF 75%);
   background-repeat: no-repeat;
   background-attachment: fixed;
-  min-width: 700px;
+  min-width: 850px;
   font-family: 'Times New Roman', Times, serif;
 }
 
@@ -19,38 +19,40 @@ header
 }
 .row
 {
-  --bs-gutter-x: 1.5rem;
-  --bs-gutter-y: 0;
+  --gutter-x: 1.5rem;
+  --gutter-y: 0;
   display: flex;
-  margin-top: calc(-1 * var(--bs-gutter-y));
+  margin-top: calc(-1 * var(--gutter-y));
   margin-right: 3rem;
-  margin-left: calc(0.2 * var(--bs-gutter-x));
+  margin-left: calc(0.2 * var(--gutter-x));
   height:50%;
   padding-right: 5%;
 }
-h1
+.logo
 {
- padding-left:10%;
+  min-height: 100px;
+  min-width: 100px;
+  max-height: 150px;
+  max-width: 150px;
+  width:50%;
 }
-/* .logo
-{
-  width:20%;
-} */
 
 h1
 {
   color: #CE4A7EFF;
   font-size: 350%;
   font-family: Fantasy,Copperplate;
+  padding-top: 2%;
 }
 
 /* nav style */
 
 .nav
 {
-  --bs-nav-tabs-link-hover-border-color: #e9ecef #e9ecef #dee2e6;
-  --bs-nav-tabs-link-active-color: #495057;
+  --link-hover-border-color: #e9ecef #e9ecef #dee2e6;
+  --link-active-color: #495057;
   padding-left: 0;
+  padding-right: 5px;
   padding-bottom: 0;
   display: flex;
   flex-wrap: wrap;
@@ -58,31 +60,28 @@ h1
 }
 
 .nav-tabs {
-  --bs-nav-tabs-border-width: 1px;
-  --bs-nav-tabs-border-color: #dee2e6;
-  --bs-nav-tabs-border-radius: 0.375rem;
-  --bs-nav-tabs-link-hover-border-color: #e9ecef #e9ecef #dee2e6;
-  --bs-nav-tabs-link-active-color: #495057;
-  --bs-nav-tabs-link-active-bg: #fff;
-  --bs-nav-tabs-link-active-border-color: #dee2e6 #dee2e6 #fff;
-  border-bottom: var(--bs-nav-tabs-border-width) solid var(--bs-nav-tabs-border-color);
+  --border-width: 1px;
+  --border-color: #dee2e6;
+  --border-radius: 0.375rem;
+  --link-active-color: #495057;
+  --link-active-bg: #fff;
+  --link-active-border-color: #dee2e6 #dee2e6 #fff;
 }
 
 .nav-link {
   display: block;
   text-decoration: none;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
-  border: var(--bs-nav-tabs-border-width) solid transparent;
-  border-top-left-radius: var(--bs-nav-tabs-border-radius);
-  border-top-right-radius: var(--bs-nav-tabs-border-radius);
+  border: var(--border-width) solid transparent;
+  border-top-left-radius: var(--border-radius);
+  border-top-right-radius: var(--border-radius);
 }
 
-.nav-tabs .nav-item{  
+.nav-tabs .nav-item{
   background: none;
   font-size: 150%;
   color: #E9DEDC;
-  background-color: #1C1C1BFF;
-  
+  background-color: #1C1C1BFF; 
 }
 
 .nav-tabs .nav-link.active {
@@ -93,7 +92,7 @@ h1
 
 .nav-tabs .nav-link:hover, .nav-tabs .nav-link:focus {
   isolation: isolate;
-  border-color: var(--bs-nav-tabs-link-hover-border-color);
+  border-color: var(--link-hover-border-color);
 }
 
 a:visited 
@@ -103,9 +102,12 @@ a:visited
 
 a:link
 {
-    color: inherit;
+  color: inherit;
 }
 
+@media only screen and (max-width: 700px) {
+  .nav{display:list-item; }
+}
 
 
 /* general use tag styles */
@@ -118,8 +120,8 @@ a:link
 .section
 {
   width: 100%;
-  padding-right: calc(var(--bs-gutter-x) * 0.5);
-  padding-left: calc(var(--bs-gutter-x) * 0.5);
+  padding-right: calc(var(--gutter-x) * 0.5);
+  padding-left: calc(var(--gutter-x) * 0.5);
   margin-right: auto;
   margin-left: auto;
   padding-bottom: 20px;
@@ -135,16 +137,16 @@ a:link
 }
 
 .sp3 {
-    text-align: center;
-    flex: 0 0 auto;
-    width: 25%;
+  text-align: center;
+  flex: 0 0 auto;
+  width: 25%;
 }
 
 .sp4 
 {
-    text-align: center;
-    flex: 0 0 auto;
-    width: 33%;
+  text-align: center;
+  flex: 0 0 auto;
+  width: 33%;
 }
 .sp5
 {  
@@ -158,7 +160,6 @@ a:link
 }
 .sp7
 {
-  
   flex: 0 0 auto;
   width: 58.33333333%;
 }
@@ -171,8 +172,8 @@ a:link
 
 .sp12 
 {
-    flex: 0 0 auto;
-    width: 100%;
+  flex: 0 0 auto;
+  width: 100%;
 }
 
 .center {
@@ -209,7 +210,7 @@ a.btn-light
 
 .txt-right
 {
- margin-left: -5;
+  margin-left: -5;
 }
 
 img
@@ -217,8 +218,6 @@ img
   width:90%;  
   padding: 5%;
 }
-
-
 
 /* footer styles */
 

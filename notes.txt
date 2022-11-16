@@ -1,5 +1,7 @@
 Need to add 
-   
+
+set media queary to 600/550
+
 Things I want to do
   -if I go to medevile and do some craft things
 

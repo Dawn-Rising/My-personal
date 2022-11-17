@@ -28,6 +28,8 @@ header
   height:50%;
   padding-right: 5%;
 }
+
+
 .logo
 {
   min-height: 100px;
@@ -103,10 +105,6 @@ a:visited
 a:link
 {
   color: inherit;
-}
-
-@media only screen and (max-width: 700px) {
-  .nav{display:list-item; }
 }
 
 
@@ -236,4 +234,29 @@ footer a:link {
 footer a:visited {
   color: inherit;
   background-color: transparent;
+}
+
+/* media size responce and order things */
+@media only screen and (max-width: 550px) {
+  .nav{display:list-item; }
+  .sp7{width:100%}
+  .sp5{width:100%}
+  .sp3{width:100%}
+  .row{display:inline}
+}
+.rowTitle .sp3
+{
+  width:25%
+}
+
+.rowTitle
+{
+  --gutter-x: 1.5rem;
+  --gutter-y: 0;
+  display: flex;
+  margin-top: calc(-1 * var(--gutter-y));
+  margin-right: 3rem;
+  margin-left: calc(0.2 * var(--gutter-x));
+  height:50%;
+  padding-right: 5%;
 }

@@ -5,7 +5,7 @@ html, body
   background-image: linear-gradient(140deg, #6F1D40 45%, #CE4A7EFF 75%);
   background-repeat: no-repeat;
   background-attachment: fixed;
-  min-width: 850px;
+  min-width: 700px;
   font-family: 'Times New Roman', Times, serif;
 }
 
@@ -111,7 +111,7 @@ a:link
 /* general use tag styles */
 .main
 {
-  padding-top:35%;
+  padding-top:250px;
   font-size: 200%;
 }
 
@@ -238,9 +238,12 @@ footer a:visited {
 
 /* media size responce and order things */
 @media only screen and (max-width: 550px) {
-  .nav{display:list-item; }
+  .nav{display:list-item;}
+  .nav-item{height:40px}
+  .main{padding-top:350px}
   .sp7{width:100%}
   .sp5{width:100%}
+  .sp4{width:100%}
   .sp3{width:100%}
   .row{display:inline}
 }
